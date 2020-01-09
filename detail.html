@@ -55,9 +55,9 @@
         <h1 class="article-title"><a href="#">mpvue使用第三方vant-weapp组件库开发微信小程序注意问题</a></h1>
         <div class="article-meta ">
 <!--          <span class="item category"><a href="# ">产品</a></span>-->
-          <span class="item time ">2016-10-14</span>
+          <span class="item time ">2020-1-9</span>
 <!--          <span class="item tags">标签：<a href="#">架构</a><a href="#">架构</a><a href="#">架构</a></span>-->
-          <span class="item views"><i class="glyphicon glyphicon-eye-open"></i> 88</span>
+<!--          <span class="item views"><i class="glyphicon glyphicon-eye-open"></i> 88</span>-->
         </div>
       </header>
 
@@ -76,12 +76,12 @@
 </code></pre>
         <p>这种模式下的小程序，在真机模拟下和开发工具中，是没有问题的，可以正常运行，但是使用开发工具的预览模式，则会报错，上传为体验版本也会报错</p>
         <p>具体页面表现为白屏，控制台报错信息为</p>
-        <p><img src="C:\Users\CWH\AppData\Roaming\Typora\typora-user-images\image-20200108102224339.png"
+        <p><img src="./img/image-20200108102224339.png"
                 referrerpolicy="no-referrer" alt="image-20200108102224339"></p>
         <p>&nbsp;</p>
         <h3>解决方案</h3>
         <p> 在使用到第三方组建的文件中，在 main.json 中添加，单个添加(用到哪个，添加哪个)，没有main.json的，自己新建一个文件就好了。</p>
-        <p><img src="C:\Users\CWH\AppData\Roaming\Typora\typora-user-images\image-20200108102521341.png"
+        <p><img src="./img/image-20200108102521341.png"
                 referrerpolicy="no-referrer" alt="image-20200108102521341"></p>
         <p> main.json </p>
         <p></p>
@@ -97,7 +97,7 @@
         <p>此时，问题得到了解决。</p>
         <p>&nbsp;</p>
         <h3>注意：引用文件的时候最好是把整个第三方组件库下载下来，然后放到 static 文件夹中</h3>
-        <p><img src="C:\Users\CWH\AppData\Roaming\Typora\typora-user-images\image-20200108102753189.png"
+        <p><img src="./img/image-20200108102753189.png"
                 referrerpolicy="no-referrer" alt="image-20200108102753189"></p>
         <p>使用这种引用方式</p>
 
